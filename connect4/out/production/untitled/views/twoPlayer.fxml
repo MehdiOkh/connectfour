@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main" prefHeight="570.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TwoPlayerController">
+   <children>
+      <AnchorPane fx:id="pane" layoutY="1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="509.0" style="-fx-background-color: linear-gradient(to bottom, #23CAAB, #16F376);; -fx-background-radius: 10 10 30 30;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="501.0" layoutX="33.0" layoutY="53.0" stroke="BLACK" strokeType="INSIDE" width="446.0" />
+            <Rectangle fx:id="sideColor" arcHeight="5.0" arcWidth="5.0" fill="#e53d3d" height="39.0" layoutX="22.0" layoutY="63.0" stroke="TRANSPARENT" strokeType="INSIDE" width="46.0" />
+            <ImageView fitHeight="515.0" fitWidth="495.0" layoutX="7.0" layoutY="45.0">
+               <image>
+                  <Image url="@../pic/Board.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover0" fitHeight="395.0" fitWidth="65.0" layoutX="25.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover1" fitHeight="395.0" fitWidth="65.0" layoutX="91.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover2" fitHeight="395.0" fitWidth="65.0" layoutX="157.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover3" fitHeight="395.0" fitWidth="65.0" layoutX="223.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover4" fitHeight="395.0" fitWidth="65.0" layoutX="289.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover5" fitHeight="395.0" fitWidth="65.0" layoutX="354.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hover6" fitHeight="395.0" fitWidth="65.0" layoutX="419.0" layoutY="147.0" visible="false">
+               <image>
+                  <Image url="@../pic/hover.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp06" fitHeight="46.0" fitWidth="46.0" layoutX="428.0" layoutY="159.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp16" fitHeight="46.0" fitWidth="46.0" layoutX="428.0" layoutY="224.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp26" fitHeight="46.0" fitWidth="46.0" layoutX="428.0" layoutY="290.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp36" fitHeight="46.0" fitWidth="46.0" layoutX="428.0" layoutY="355.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp46" fitHeight="46.0" fitWidth="46.0" layoutX="428.0" layoutY="421.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp56" fitHeight="46.0" fitWidth="46.0" layoutX="428.0" layoutY="487.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp05" fitHeight="46.0" fitWidth="46.0" layoutX="363.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp15" fitHeight="46.0" fitWidth="46.0" layoutX="363.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp25" fitHeight="46.0" fitWidth="46.0" layoutX="363.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp35" fitHeight="46.0" fitWidth="46.0" layoutX="363.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp45" fitHeight="46.0" fitWidth="46.0" layoutX="363.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp55" fitHeight="46.0" fitWidth="46.0" layoutX="363.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp04" fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp14" fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp24" fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp34" fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp44" fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp54" fitHeight="46.0" fitWidth="46.0" layoutX="297.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp03" fitHeight="46.0" fitWidth="46.0" layoutX="231.0" layoutY="159.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp13" fitHeight="46.0" fitWidth="46.0" layoutX="231.0" layoutY="224.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp23" fitHeight="46.0" fitWidth="46.0" layoutX="231.0" layoutY="290.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp33" fitHeight="46.0" fitWidth="46.0" layoutX="231.0" layoutY="355.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp43" fitHeight="46.0" fitWidth="46.0" layoutX="231.0" layoutY="421.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp53" fitHeight="46.0" fitWidth="46.0" layoutX="231.0" layoutY="487.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp02" fitHeight="46.0" fitWidth="46.0" layoutX="166.0" layoutY="159.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp12" fitHeight="46.0" fitWidth="46.0" layoutX="166.0" layoutY="224.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp22" fitHeight="46.0" fitWidth="46.0" layoutX="166.0" layoutY="290.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp32" fitHeight="46.0" fitWidth="46.0" layoutX="166.0" layoutY="355.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp42" fitHeight="46.0" fitWidth="46.0" layoutX="166.0" layoutY="421.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp52" fitHeight="46.0" fitWidth="46.0" layoutX="166.0" layoutY="487.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp01" fitHeight="46.0" fitWidth="46.0" layoutX="100.0" layoutY="159.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp11" fitHeight="46.0" fitWidth="46.0" layoutX="100.0" layoutY="224.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp21" fitHeight="46.0" fitWidth="46.0" layoutX="100.0" layoutY="290.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp31" fitHeight="46.0" fitWidth="46.0" layoutX="100.0" layoutY="355.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp41" fitHeight="46.0" fitWidth="46.0" layoutX="100.0" layoutY="421.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp51" fitHeight="46.0" fitWidth="46.0" layoutX="100.0" layoutY="487.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp00" fitHeight="46.0" fitWidth="46.0" layoutX="35.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp10" fitHeight="46.0" fitWidth="46.0" layoutX="35.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp20" fitHeight="46.0" fitWidth="46.0" layoutX="35.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp30" fitHeight="46.0" fitWidth="46.0" layoutX="35.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp40" fitHeight="46.0" fitWidth="46.0" layoutX="35.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yp50" fitHeight="46.0" fitWidth="46.0" layoutX="35.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp06" fitHeight="47.0" fitWidth="47.0" layoutX="428.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp16" fitHeight="47.0" fitWidth="47.0" layoutX="428.0" layoutY="224.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp26" fitHeight="47.0" fitWidth="47.0" layoutX="428.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp36" fitHeight="47.0" fitWidth="47.0" layoutX="428.0" layoutY="355.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp46" fitHeight="47.0" fitWidth="47.0" layoutX="428.0" layoutY="421.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp56" fitHeight="47.0" fitWidth="47.0" layoutX="428.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp05" fitHeight="47.0" fitWidth="47.0" layoutX="362.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp15" fitHeight="47.0" fitWidth="47.0" layoutX="362.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp25" fitHeight="47.0" fitWidth="47.0" layoutX="362.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp35" fitHeight="47.0" fitWidth="47.0" layoutX="362.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp45" fitHeight="47.0" fitWidth="47.0" layoutX="362.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp55" fitHeight="47.0" fitWidth="47.0" layoutX="362.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp04" fitHeight="47.0" fitWidth="47.0" layoutX="297.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp14" fitHeight="47.0" fitWidth="47.0" layoutX="297.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp24" fitHeight="47.0" fitWidth="47.0" layoutX="297.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp34" fitHeight="47.0" fitWidth="47.0" layoutX="297.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp44" fitHeight="47.0" fitWidth="47.0" layoutX="297.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp54" fitHeight="47.0" fitWidth="47.0" layoutX="297.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp03" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp13" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp23" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp33" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp43" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp53" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp02" fitHeight="47.0" fitWidth="47.0" layoutX="165.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp12" fitHeight="47.0" fitWidth="47.0" layoutX="165.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp22" fitHeight="47.0" fitWidth="47.0" layoutX="165.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp32" fitHeight="47.0" fitWidth="47.0" layoutX="165.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp42" fitHeight="47.0" fitWidth="47.0" layoutX="165.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp52" fitHeight="47.0" fitWidth="47.0" layoutX="165.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp01" fitHeight="47.0" fitWidth="47.0" layoutX="100.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp11" fitHeight="47.0" fitWidth="47.0" layoutX="100.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp21" fitHeight="47.0" fitWidth="47.0" layoutX="100.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp31" fitHeight="47.0" fitWidth="47.0" layoutX="100.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp41" fitHeight="47.0" fitWidth="47.0" layoutX="100.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp51" fitHeight="47.0" fitWidth="47.0" layoutX="100.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp00" fitHeight="47.0" fitWidth="47.0" layoutX="34.0" layoutY="158.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp10" fitHeight="47.0" fitWidth="47.0" layoutX="34.0" layoutY="223.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp20" fitHeight="47.0" fitWidth="47.0" layoutX="34.0" layoutY="289.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp30" fitHeight="47.0" fitWidth="47.0" layoutX="34.0" layoutY="354.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp40" fitHeight="47.0" fitWidth="47.0" layoutX="34.0" layoutY="420.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rp50" fitHeight="47.0" fitWidth="47.0" layoutX="34.0" layoutY="486.0" visible="false">
+               <image>
+                  <Image url="@../pic/Red.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="th0" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="25.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="th1" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="91.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="th2" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="157.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="th3" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="223.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="th4" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="289.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="th5" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="354.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="th6" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="382.0" layoutX="419.0" layoutY="154.0" onMouseClicked="#onPlay" stroke="#ffffff00" strokeType="INSIDE" width="65.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Text fx:id="turnText" fill="#e33d3d" layoutX="71.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Red's turn..." wrappingWidth="144.13671875">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="21.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="menuBtn" contentDisplay="CENTER" layoutX="429.0" layoutY="64.0" onAction="#openMenu" prefHeight="39.0" prefWidth="18.0" style="-fx-background-color: #313131; -fx-border-color: #d1d1d1; -fx-border-width: 1.5; -fx-border-radius: 4;" text=" " textAlignment="CENTER" textFill="#222222">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="closeBtn" contentDisplay="CENTER" ellipsisString="" layoutX="469.0" layoutY="9.0" onAction="#onClose" prefHeight="31.0" prefWidth="23.0" ripplerFill="#ff9595" style="-fx-background-color: #d02020; -fx-background-radius: 5;" text=" " textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/un.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="35.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect Four" wrappingWidth="144.13671875">
+               <font>
+                  <Font name="Britannic Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="menuPane" layoutX="28.0" layoutY="111.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="456.0" visible="false">
+         <children>
+            <Rectangle fx:id="greyShade" arcHeight="40.0" arcWidth="40.0" fill="#c7c7c7c7" height="435.0" layoutX="-2.0" layoutY="-4.0" onMouseClicked="#closeMenu" stroke="TRANSPARENT" strokeType="INSIDE" width="458.0" />
+            <AnchorPane fx:id="menu" layoutX="103.0" layoutY="85.0" prefHeight="253.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to bottom left, #515151, #222222);; -fx-background-radius: 20px;">
+               <children>
+                  <Text fx:id="winnerText" fill="#e1e1e1" layoutY="40.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect Four" textAlignment="CENTER" wrappingWidth="247.0">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Text>
+                  <Line endX="100.0" layoutX="123.0" layoutY="55.0" startX="-100.0" />
+                  <JFXButton alignment="CENTER" layoutX="23.0" layoutY="146.0" onMouseClicked="#twoPlayer" prefHeight="46.0" prefWidth="201.0" ripplerFill="#ffa2a2" style="-fx-background-color: linear-gradient(to bottom right, #E5DC48, #E3716F);; -fx-background-radius: 13px;" text="Two player" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton layoutX="23.0" layoutY="86.0" onMouseClicked="#singlePlayer" prefHeight="46.0" prefWidth="201.0" ripplerFill="#e0e0e0" style="-fx-background-color: linear-gradient(to top left, #E5DC48, #E3716F);; -fx-background-radius: 13px;" text="Single player" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXButton>
+                  <Line endX="100.0" layoutX="123.0" layoutY="54.0" startX="-100.0" stroke="#dddddd" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="30.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="38.0" layoutX="32.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pic/cpl.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
