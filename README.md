@@ -1,4 +1,6 @@
 # connectfour
+===============================
+![1](https://github.com/MehdiOkh/connectfour/blob/main/image_2021-04-28_23-50-55.png)
 connect four game with 2 mode in java :
 1.two player mode
 2.single player mode
